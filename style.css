@@ -121,16 +121,13 @@ h2 {
   margin: 0 auto;
 }
 .pain-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 20px;
+  padding: 20px 24px;
   background: #fff;
   border-radius: 10px;
   border: 1px solid #eee;
+  border-left: 3px solid #cc0000;
 }
-.pain-icon { font-size: 1.4em; flex-shrink: 0; margin-top: 2px; }
-.pain-item p { font-size: 0.95em; color: #444; }
+.pain-item p { font-size: 0.95em; color: #444; margin: 0; }
 
 /* ── How ── */
 .steps {
