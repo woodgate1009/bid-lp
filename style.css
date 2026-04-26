@@ -1,0 +1,106 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+
+.hero {
+  background: linear-gradient(135deg, #1a5c1a, #2c7a2c);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 { font-size: 2em; margin-bottom: 16px; line-height: 1.3; }
+.hero .subtitle { font-size: 1.1em; opacity: 0.9; margin-bottom: 32px; }
+
+.cta-button {
+  display: inline-block;
+  background: #06c755;
+  color: white;
+  text-decoration: none;
+  padding: 16px 48px;
+  border-radius: 50px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+.cta-button:hover { transform: scale(1.05); }
+
+.pain, .solution, .pricing, .faq {
+  padding: 60px 20px;
+}
+.pain { background: #f8f8f8; }
+
+h2 { text-align: center; font-size: 1.5em; margin-bottom: 32px; }
+
+.pain ul { list-style: none; max-width: 600px; margin: 0 auto; }
+.pain li {
+  padding: 12px 0 12px 32px;
+  position: relative;
+  font-size: 1.05em;
+}
+.pain li::before {
+  content: "✕";
+  position: absolute;
+  left: 0;
+  color: #cc0000;
+  font-weight: bold;
+}
+
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+.feature {
+  text-align: center;
+  padding: 24px;
+  background: #f0f7f0;
+  border-radius: 12px;
+}
+.feature-icon { font-size: 2em; margin-bottom: 8px; }
+.feature h3 { margin-bottom: 8px; }
+.feature p { font-size: 0.9em; color: #666; }
+
+.price-card {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  border: 2px solid #2c7a2c;
+  border-radius: 16px;
+  padding: 40px;
+}
+.price { font-size: 1.2em; margin-bottom: 16px; }
+.price span { font-size: 2em; font-weight: bold; color: #2c7a2c; }
+.price-card ul { list-style: none; text-align: left; margin: 24px 0; }
+.price-card li { padding: 8px 0 8px 24px; position: relative; }
+.price-card li::before { content: "✓"; position: absolute; left: 0; color: #2c7a2c; font-weight: bold; }
+.price-card .cta-button { margin-top: 16px; }
+
+details {
+  max-width: 600px;
+  margin: 0 auto 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+details p { margin-top: 12px; color: #666; }
+
+footer {
+  background: #333;
+  color: #aaa;
+  text-align: center;
+  padding: 24px;
+  font-size: 0.85em;
+}
+footer a { color: #aaa; }
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.5em; }
+  .hero { padding: 48px 20px; }
+}
